@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load cache %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per site cache</title>
+</head>
+<body>
+    <h1>The per site cache 1</h1><br>
+  
+    {% cache 20 home %}
+    <h1>The per site cache 2</h1><br>
+    <h1>The per site cache 3</h1><br>
+    <h1>The per site cache 4</h1><br>
+   {% endcache %}
+</body>
+</html>
